@@ -1,0 +1,117 @@
+.moving-lines {
+    width: 16.666667%;
+    transition: width 1s ease-in-out;
+}
+
+li:hover .moving-lines {
+    width: 100%;
+}
+
+.hr-shadow {
+    box-shadow: 0 0 10px 5px rgba(243, 229, 185, 0.3);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(254, 223, 119, 1);
+}
+
+.flickity-prev-next-button {
+  color: rgba(240, 248, 255, 0.523);
+  background: none;
+}
+
+.flickity-button:hover {
+  background: rgba(255, 255, 255, 0.297);
+}
+
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+svg {
+  fill: currentColor;
+  height: auto;
+  max-width: 66vmin;
+  transform-origin: center;
+  width: 150%;
+}
+
+.typing-cursor {
+    animation: blink-animation 0.7s infinite;
+}
+
+@keyframes blink-animation {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+
+.carousel {
+    background: none;
+}
+
+
+.carousel-cell {
+    width: 100%;
+    height: fit-content;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    overflow: hidden; /* Add this line */
+}
+
+
+.carousel-cell:before, .carousel-cell__number {
+    display: none;
+}
+
+  
+  .carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+  }
+  
+  .carousel-cell-image {
+    display: block;
+    height: 300px;
+  }
+  
+  .carousel.is-fullscreen .carousel-cell-image {
+    max-width: 100%;
+  }
+
+
+  @keyframes project_image {
+    0% {
+      transform: translateX(75%);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  #project-image-show {
+    animation: project_image 1s ease-in-out;
+  }
+
+  @keyframes opening_project_image {
+    0% {
+      transform: translateX(-75%);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+.animate-opening-project-image {
+    animation: opening_project_image 1s ease-in-out;
+}
